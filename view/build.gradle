@@ -1,0 +1,12 @@
+apply plugin: 'groovy'
+
+defaultTasks 'hi'
+
+buildscript {
+  repositories { mavenLocal() }
+    dependencies { classpath 'com.example:greet:1.0-SNAPSHOT' }
+    }
+
+task hello(type: com.example.GreetingTask)
+
+
